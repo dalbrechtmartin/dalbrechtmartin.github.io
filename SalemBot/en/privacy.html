@@ -53,7 +53,7 @@
             <td>Performance of the Terms of Service (Art. 6(1)(b))</td>
           </tr>
           <tr>
-            <td>Ribbons earned during a sabbat: sabbat, source (daily reward, welcome, quest), number, day and time</td>
+            <td>Ribbons earned during a sabbat: sabbat, source (daily reward, welcome, quest, evening), number, day and time</td>
             <td>Cap the ribbons that welcomes give each day</td>
             <td>Legitimate interest: keeping the game fair (Art. 6(1)(f))</td>
           </tr>
@@ -93,8 +93,8 @@
             <td>Legitimate interest: bringing new members and keeping the game fair (Art. 6(1)(f))</td>
           </tr>
           <tr>
-            <td>Choice of the 🔔 Gazette role, even without a game account: Discord user ID, date of the choice, date of leaving the server</td>
-            <td>Mention you in the gazette, and give you the role back if you come back to the server</td>
+            <td>Choice of the 🔔 Gazette and 💬 Question du jour roles, even without a game account: Discord user ID, date of the choice, date of leaving the server</td>
+            <td>Mention you in the gazette or on the question of the day, and give you these roles back if you come back to the server</td>
             <td>Performance of the Terms of Service (Art. 6(1)(b))</td>
           </tr>
           <tr>
@@ -107,6 +107,56 @@
             <td>Show you once, at your next command, the button that lets the bot write to you in private</td>
             <td>Legitimate interest: delivering the bot's messages to you (reminders, sanctions, referral) (Art. 6(1)(f))</td>
           </tr>
+          <tr>
+            <td>Birthday, even without a game account: day and month, never the year; whether it is the day your witch was created rather than your own; date you set it</td>
+            <td>Wish you a happy birthday in #discussion, give you the 🎂 role for the day, and show your star sign on your profile</td>
+            <td>Performance of the Terms of Service (Art. 6(1)(b))</td>
+          </tr>
+          <tr>
+            <td>After you remove your birthday: the date you had set it</td>
+            <td>Only allow a date to be set once every 365 days, even after a removal</td>
+            <td>Legitimate interest: preventing abuse (Art. 6(1)(f))</td>
+          </tr>
+          <tr>
+            <td>Card of the day: the last card drawn with <code>/tirage</code> and the day of the draw</td>
+            <td>Allow only one card a day</td>
+            <td>Performance of the Terms of Service (Art. 6(1)(b))</td>
+          </tr>
+          <tr>
+            <td>Question of the day: for each question you answered in its thread, date of your first answer, number of lucky rolls and date of the last one</td>
+            <td>Pay your first answer only once, and cap the lucky rolls</td>
+            <td>Legitimate interest: keeping rewards fair (Art. 6(1)(f))</td>
+          </tr>
+          <tr>
+            <td>Secret answer of a question of the day: number of tries and date you found it</td>
+            <td>Cap the tries at 3 per question, and count the secret answers found (achievement at the tenth)</td>
+            <td>Performance of the Terms of Service (Art. 6(1)(b))</td>
+          </tr>
+          <tr>
+            <td>Question written by the team for a day: text, Discord user ID of the person who wrote it, date</td>
+            <td>Ask it that day instead of a question from the library</td>
+            <td>Legitimate interest: bringing the server to life (Art. 6(1)(f))</td>
+          </tr>
+          <tr>
+            <td>Themed evenings: theme, title, day, start and end times, voice channel, Discord event, Discord user ID of the hostess</td>
+            <td>Organise and announce the evening, then pay the hostess</td>
+            <td>Performance of the Terms of Service (Art. 6(1)(b))</td>
+          </tr>
+          <tr>
+            <td>Evening proposals: Discord user ID of the member who proposes, theme, title and description, start time, length, channel, date of the proposal, the team's decision, its date and the Discord user ID of the person who made it</td>
+            <td>Pass the proposal on to the moderation team and keep its decision; only one pending proposal at a time, and one every 7 days</td>
+            <td>Legitimate interest: organising the evenings and capping spam (Art. 6(1)(f))</td>
+          </tr>
+          <tr>
+            <td>Attendance at evenings, even without a game account: minutes spent in the evening's voice channel, moment you reached the quarter of an hour that pays</td>
+            <td>Pay your attendance only once, and pay the hostess when at least 3 other members stayed a quarter of an hour</td>
+            <td>Legitimate interest: keeping rewards fair (Art. 6(1)(f))</td>
+          </tr>
+          <tr>
+            <td>Number of evenings you hosted with enough guests</td>
+            <td>Count the evenings you hosted (achievement at the third)</td>
+            <td>Performance of the Terms of Service (Art. 6(1)(b))</td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -115,34 +165,41 @@
     <ul>
       <li>Your Discord name and avatar, read when you use a command to show your profile.</li>
       <li>Your server roles, to check your rights (member, beta, VIP, booster, moderation).</li>
-      <li>When you join and leave the server, the date you joined it and the creation date of your Discord account: to welcome newcomers, recognise referrals, not reward accounts that are too recent and count the week of members without a witch.</li>
+      <li>When you join and leave the server, the date you joined it and the creation date of your Discord account: to welcome newcomers, recognise referrals, not reward accounts that are too recent, keep evening proposals for Discord accounts older than 30 days and count the week of members without a witch.</li>
       <li>How many times each invite link of the server was used, kept in memory to know through which link a newcomer arrived.</li>
       <li>The time and ID of your latest messages, kept in memory for a few seconds to detect flooding. The bot does not read the content of your messages.</li>
-      <li>When you write in #discussion or one of its threads, the bot sees that you wrote, not what you wrote: it counts it at most once every 10 minutes for the quest steps that ask for it. When someone without the beta role writes in the game channel, it reminds them to sign up.</li>
+      <li>When you write in #discussion or one of its threads, the bot sees that you wrote, not what you wrote: it counts it at most once every 10 minutes for the quest steps that ask for it. In the thread of the question of the day, it likewise sees that a member wrote there, not what she wrote, to pay her first answer and her lucky rolls. When someone without the beta role writes in the game channel, it reminds them to sign up.</li>
+      <li>The answer you type to guess the secret answer of a question of the day: compared with the bot's, then forgotten. It is neither stored nor written to the technical logs; only the number of tries is kept.</li>
+      <li>Your star sign, worked out from the day and month of your birthday when your profile is shown, never stored.</li>
+      <li>During a themed evening, and only then, the list of members in the evening's voice channel, taken every 5 minutes to count their minutes. The bot does not look at other voice channels, never joins a voice channel and hears nothing that is said there.</li>
       <li>The server's technical logs, which may hold your Discord ID and the name of a command you used: they are used to fix errors and are wiped at each bot update.</li>
     </ul>
     <p>The bot sets no cookies, shows no ads and never sells or shares your data.</p>
 
     <h2>Retention periods</h2>
     <ul>
-      <li><strong>Game account</strong>: as long as you play; deleted on request, and at the latest 3 years after your last activity in the game. Your wands, items, achievements, quests, chests, pending rewards and ribbons earned are deleted with it.</li>
+      <li><strong>Game account</strong>: as long as you play; deleted on request, and at the latest 3 years after your last activity in the game. Your wands, items, achievements, quests, chests, pending rewards, ribbons earned, answers to questions of the day, tries at secret answers and number of evenings hosted are deleted with it.</li>
       <li><strong>Purchase records</strong>: while the subscription is active, then 3 years after it ends, to be able to answer a possible dispute. They are kept even if your game account is deleted, on request or through the automatic deletion of inactive accounts.</li>
       <li><strong>Warnings and sanctions</strong>: 2 years from their date, then deleted. They are kept even if you delete your game account or leave the server, so that the rules still apply during that time.</li>
       <li><strong>Referral</strong>: 3 years after the arrival on the server, then deleted. It is kept if you leave the server, so that a former member who comes back does not become a godchild; a godmother's invite link and tier are deleted with her game account.</li>
       <li><strong>Welcoming newcomers</strong>: 3 years after the welcome card, then deleted. It is kept even if you delete your game account or leave the server, so that leaving and coming back gives no gold again.</li>
-      <li><strong>Choice of the 🔔 Gazette role</strong>: as long as you keep it; deleted as soon as you remove it. If you leave the server, it is kept to give you the role back when you return, then deleted 3 years after you left.</li>
+      <li><strong>Choice of the 🔔 Gazette and 💬 Question du jour roles</strong>: as long as you keep the role; deleted as soon as you remove it. If you leave the server, it is kept to give you the role back when you return, then deleted 3 years after you left.</li>
       <li><strong>Members without a witch</strong>: deleted as soon as you leave the server, and at the next daily check once you create your witch or are no longer concerned.</li>
       <li><strong>Private messages</strong>: deleted when you leave the server, and at the latest 3 years after the last private message the bot tried to send you.</li>
+      <li><strong>Birthday</strong>: until you remove it or leave the server. After a removal, only the date you had set it remains, for the rule of one date every 365 days; it is replaced by your next date, and deleted when you leave the server. The birthday is not tied to the game account: it remains if that account is deleted.</li>
+      <li><strong>Card of the day</strong>: replaced by the next draw, and deleted 30 days after the draw.</li>
+      <li><strong>Question of the day</strong>: your first answer and your lucky rolls are deleted 30 days after the first answer; your tries at the secret answer are kept with your game account, for the achievement. A question written by the team is deleted once asked.</li>
+      <li><strong>Themed evenings</strong>: an evening and the attendance are deleted 90 days after it ends; a proposal, 90 days after the team's decision, or after its planned time if nobody answered. The number of evenings hosted is kept with your game account, for the achievement.</li>
       <li><strong>Database backups</strong>: one copy a day, kept 30 days then deleted. Data removed from the database therefore also leaves the backups within 30 days.</li>
       <li><strong>Technical logs</strong>: until the next bot update. Between two updates, they are capped at 10 MB: the oldest lines are deleted as new ones come in.</li>
     </ul>
 
     <h2>Recipients and hosting</h2>
     <ul>
-      <li><strong>Access</strong>: only the data controller can access the database. Moderators see, on Discord, the sanctions they look up or apply.</li>
+      <li><strong>Access</strong>: only the data controller can access the database. Moderators see, on Discord, the sanctions they look up or apply, and receive the evening proposals in their channel (member who proposes, title, description, time).</li>
       <li><strong>Hosting of the bot and its database</strong>: a virtual private server rented from OVHcloud (OVH SAS, 2 rue Kellermann, 59100 Roubaix, France), located in the OVHcloud data centre in Singapore. This transfer outside the European Union is covered by the European Commission's standard contractual clauses included in OVHcloud's data processing agreement.</li>
       <li><strong>Backups</strong>: stored by OVHcloud in its Strasbourg data centre, in France.</li>
-      <li><strong>Discord</strong>: Discord sells the subscription and sends the purchase records to the bot. The bot's messages and replies also go through Discord, which processes them under <a href="https://discord.com/privacy">its own privacy policy</a>. The bot posts messages there that may mention you (welcome card, end of a chapter), sends you private messages (reminders to members without a witch, warnings and sanctions, news of your godchildren) and gives you roles (beta, VIP, rarity of your wand, 🔔 Gazette).</li>
+      <li><strong>Discord</strong>: Discord sells the subscription and sends the purchase records to the bot. The bot's messages and replies also go through Discord, which processes them under <a href="https://discord.com/privacy">its own privacy policy</a>. The bot posts messages there that may mention you (welcome card, end of a chapter, birthday wish), sends you private messages (reminders to members without a witch, warnings and sanctions, news of your godchildren, decision on your evening proposal, gold earned as a hostess) and gives you roles (beta, VIP, rarity of your wand, 🔔 Gazette, 💬 Question du jour, 🎂 on your birthday). The Discord event of an evening and its souvenir card in #annonces name its hostess.</li>
     </ul>
 
     <h2>Your rights</h2>
