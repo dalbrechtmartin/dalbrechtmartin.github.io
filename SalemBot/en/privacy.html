@@ -21,7 +21,7 @@
   </header>
   <main id="content">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 9 November 2026</p>
+    <p class="updated">Last updated: 10 November 2026</p>
     <p>This is a translation; the <a href="../confidentialite.html" hreflang="fr">French version</a> prevails.</p>
 
     <p>Salem is a role-playing Discord bot for the "L'antre de Salem" server only. This page explains which personal data it processes, why, for how long, and how to exercise your rights under the General Data Protection Regulation (GDPR) and the French Data Protection Act.</p>
@@ -43,9 +43,19 @@
             <td>Performance of the Terms of Service (Art. 6(1)(b))</td>
           </tr>
           <tr>
-            <td>Level, experience, gold, inventory, quests, achievements, account creation and update dates, date you saw the arrival story</td>
-            <td>Run the game</td>
+            <td>Level, experience, gold, sabbat ribbons, inventory, achievements and the date of each, title shown, portrait background and frame, last day of the daily reward and streak of days, account creation and update dates, date of your last activity in the game, date you first created your witch, date you received the rebirth stone, date you saw the arrival story</td>
+            <td>Run the game, and delete inactive accounts</td>
             <td>Performance of the Terms of Service (Art. 6(1)(b))</td>
+          </tr>
+          <tr>
+            <td>Journal quests: progress of each step, steps done, start and end dates, day the bot told you about a discovery, date it told you that the quest was finished; chest of each finished chapter (date, level reached, dates it was opened and shared in #discussion, message that announced the end of the chapter); quest rewards waiting for a later version (reward, date)</td>
+            <td>Track your progress, and give each reward and each announcement only once</td>
+            <td>Performance of the Terms of Service (Art. 6(1)(b))</td>
+          </tr>
+          <tr>
+            <td>Ribbons earned during a sabbat: sabbat, source (daily reward, welcome, quest), number, day and time</td>
+            <td>Cap the ribbons that welcomes give each day</td>
+            <td>Legitimate interest: keeping the game fair (Art. 6(1)(f))</td>
           </tr>
           <tr>
             <td>Look of your witch (hair style, colours, skin, eyes, outfit, hat)</td>
@@ -53,7 +63,7 @@
             <td>Performance of the Terms of Service (Art. 6(1)(b))</td>
           </tr>
           <tr>
-            <td>Wands and items (traits, public signature, owner), wand quiz answers and quiz date</td>
+            <td>Wands and items (traits, core roll, public signature, owner, person the wand was made for), wand quiz answers and quiz date</td>
             <td>Create your wand and track who owns each item</td>
             <td>Performance of the Terms of Service (Art. 6(1)(b))</td>
           </tr>
@@ -73,14 +83,29 @@
             <td>Legitimate interest: the defence of our rights (Art. 6(1)(f))</td>
           </tr>
           <tr>
-            <td>Welcoming newcomers, even without a game account: Discord user ID of the newcomer and date of their welcome card, IDs of the members who welcomed them, date and gold earned</td>
+            <td>Welcoming newcomers, even without a game account: Discord user ID of the newcomer, date of their welcome card and whether their Discord account was too recent for their welcome to give gold, IDs of the members who welcomed them, date and gold earned</td>
             <td>Welcome each newcomer only once, and pay each welcome only once</td>
             <td>Legitimate interest: welcoming members and keeping the game fair (Art. 6(1)(f))</td>
           </tr>
           <tr>
-            <td>Referral, even without a game account: Discord user ID and date of the first arrival on the server, IDs of the godmother and of the godchild, date of the link, date of leaving the server, gold earned at each milestone; for a godmother, the code of her invite link and the tier she reached</td>
+            <td>Referral, even without a game account: Discord user ID and date of the first arrival on the server, whether you already had a game account at that arrival, IDs of the godmother and of the godchild, how the link was made (invite link or choice in the game), date of the link, date of leaving the server, gold earned at each milestone; for a godmother, the code of her invite link and the tier she reached</td>
             <td>Know who invited a newcomer, give the gold and the tiers only once, and prevent abuse (new accounts, former members coming back)</td>
             <td>Legitimate interest: bringing new members and keeping the game fair (Art. 6(1)(f))</td>
+          </tr>
+          <tr>
+            <td>Choice of the 🔔 Gazette role, even without a game account: Discord user ID, date of the choice, date of leaving the server</td>
+            <td>Mention you in the gazette, and give you the role back if you come back to the server</td>
+            <td>Performance of the Terms of Service (Art. 6(1)(b))</td>
+          </tr>
+          <tr>
+            <td>Members without a witch: Discord user ID, first day of your week (your arrival on the server), last reminder sent and its day</td>
+            <td>Remind you in a private message, on days 1, 3 and 6, to create your witch, then remove you from the server on day 7 if you have not; the team, VIPs and boosters are left out</td>
+            <td>Legitimate interest: a server without ghost accounts (Art. 6(1)(f))</td>
+          </tr>
+          <tr>
+            <td>Private messages, even without a game account: Discord user ID, date since which the bot's private messages no longer reach you, whether the button to let it write to you is still to be shown, date of the last update</td>
+            <td>Show you once, at your next command, the button that lets the bot write to you in private</td>
+            <td>Legitimate interest: delivering the bot's messages to you (reminders, sanctions, referral) (Art. 6(1)(f))</td>
           </tr>
         </tbody>
       </table>
@@ -89,19 +114,25 @@
     <h2>Data used but not stored</h2>
     <ul>
       <li>Your Discord name and avatar, read when you use a command to show your profile.</li>
-      <li>Your server roles, to check your rights (member, beta, moderation).</li>
+      <li>Your server roles, to check your rights (member, beta, VIP, booster, moderation).</li>
+      <li>When you join and leave the server, the date you joined it and the creation date of your Discord account: to welcome newcomers, recognise referrals, not reward accounts that are too recent and count the week of members without a witch.</li>
+      <li>How many times each invite link of the server was used, kept in memory to know through which link a newcomer arrived.</li>
       <li>The time and ID of your latest messages, kept in memory for a few seconds to detect flooding. The bot does not read the content of your messages.</li>
+      <li>When you write in #discussion or one of its threads, the bot sees that you wrote, not what you wrote: it counts it at most once every 10 minutes for the quest steps that ask for it. When someone without the beta role writes in the game channel, it reminds them to sign up.</li>
       <li>The server's technical logs, which may hold your Discord ID and the name of a command you used: they are used to fix errors and are wiped at each bot update.</li>
     </ul>
     <p>The bot sets no cookies, shows no ads and never sells or shares your data.</p>
 
     <h2>Retention periods</h2>
     <ul>
-      <li><strong>Game account</strong>: as long as you play; deleted on request, and at the latest 3 years after your last activity in the game.</li>
-      <li><strong>Purchase records</strong>: while the subscription is active, then 3 years after it ends, to be able to answer a possible dispute. They are kept even if you delete your game account, with <code>/reset</code> or through the automatic deletion of inactive accounts.</li>
+      <li><strong>Game account</strong>: as long as you play; deleted on request, and at the latest 3 years after your last activity in the game. Your wands, items, achievements, quests, chests, pending rewards and ribbons earned are deleted with it.</li>
+      <li><strong>Purchase records</strong>: while the subscription is active, then 3 years after it ends, to be able to answer a possible dispute. They are kept even if your game account is deleted, on request or through the automatic deletion of inactive accounts.</li>
       <li><strong>Warnings and sanctions</strong>: 2 years from their date, then deleted. They are kept even if you delete your game account or leave the server, so that the rules still apply during that time.</li>
       <li><strong>Referral</strong>: 3 years after the arrival on the server, then deleted. It is kept if you leave the server, so that a former member who comes back does not become a godchild; a godmother's invite link and tier are deleted with her game account.</li>
       <li><strong>Welcoming newcomers</strong>: 3 years after the welcome card, then deleted. It is kept even if you delete your game account or leave the server, so that leaving and coming back gives no gold again.</li>
+      <li><strong>Choice of the 🔔 Gazette role</strong>: as long as you keep it; deleted as soon as you remove it. If you leave the server, it is kept to give you the role back when you return, then deleted 3 years after you left.</li>
+      <li><strong>Members without a witch</strong>: deleted as soon as you leave the server, and at the next daily check once you create your witch or are no longer concerned.</li>
+      <li><strong>Private messages</strong>: deleted when you leave the server, and at the latest 3 years after the last private message the bot tried to send you.</li>
       <li><strong>Database backups</strong>: one copy a day, kept 30 days then deleted. Data removed from the database therefore also leaves the backups within 30 days.</li>
       <li><strong>Technical logs</strong>: until the next bot update. Between two updates, they are capped at 10 MB: the oldest lines are deleted as new ones come in.</li>
     </ul>
@@ -111,13 +142,13 @@
       <li><strong>Access</strong>: only the data controller can access the database. Moderators see, on Discord, the sanctions they look up or apply.</li>
       <li><strong>Hosting of the bot and its database</strong>: a virtual private server rented from OVHcloud (OVH SAS, 2 rue Kellermann, 59100 Roubaix, France), located in the OVHcloud data centre in Singapore. This transfer outside the European Union is covered by the European Commission's standard contractual clauses included in OVHcloud's data processing agreement.</li>
       <li><strong>Backups</strong>: stored by OVHcloud in its Strasbourg data centre, in France.</li>
-      <li><strong>Discord</strong>: Discord sells the subscription and sends the purchase records to the bot. The bot's messages and replies also go through Discord, which processes them under <a href="https://discord.com/privacy">its own privacy policy</a>.</li>
+      <li><strong>Discord</strong>: Discord sells the subscription and sends the purchase records to the bot. The bot's messages and replies also go through Discord, which processes them under <a href="https://discord.com/privacy">its own privacy policy</a>. The bot posts messages there that may mention you (welcome card, end of a chapter), sends you private messages (reminders to members without a witch, warnings and sanctions, news of your godchildren) and gives you roles (beta, VIP, rarity of your wand, 🔔 Gazette).</li>
     </ul>
 
     <h2>Your rights</h2>
     <p>You may ask to access, correct, erase or port your data, to restrict its processing, and object to processing based on legitimate interest.</p>
     <ul>
-      <li><strong>Delete your game account</strong>: during the beta, the <code>/reset compte</code> command erases it at once, with your wands and items. Otherwise, ask the moderation team or send an email.</li>
+      <li><strong>Delete your game account</strong>: ask the moderation team or send an email. The rebirth stone, usable once from <code>/sac</code>, restarts the game from zero but does not delete your account.</li>
       <li><strong>Other requests</strong>: write to <a href="mailto:contact@danaedev.fr">contact@danaedev.fr</a> with your Discord name. You will get an answer within one month.</li>
       <li><strong>Complaint</strong>: if you think your rights are not respected, you can contact the French data protection authority, the <a href="https://www.cnil.fr/fr/plaintes">CNIL</a>.</li>
     </ul>
